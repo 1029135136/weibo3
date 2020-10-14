@@ -19,7 +19,7 @@ Route::get('/help', 'StaticPagesController@help')
     ->name('help');
 Route::get('/about', 'StaticPagesController@about')
     ->name('about');
-
+Route::resource('users', 'UsersController');
 //注册页面
 Route::get('/signup', 'UsersController@create')
     ->name('signup');
