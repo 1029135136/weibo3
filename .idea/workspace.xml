@@ -25,13 +25,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc72134-8d00-4631-921a-e8bf5b41fcce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/static_pages/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/static_pages/help.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/static_pages/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weibo3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weibo3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/static_pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static_pages/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,17 +154,28 @@
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ioZgRRuoBQECllR8ChlsbLWTK5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/static_pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -186,7 +202,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602576015606</updated>
       <workItem from="1602576016638" duration="1483000" />
-      <workItem from="1602577706824" duration="1358000" />
+      <workItem from="1602577706824" duration="4396000" />
+      <workItem from="1602651707091" duration="888000" />
     </task>
     <servers />
   </component>
@@ -203,19 +220,31 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="593" y="317" key="FileChooserDialogImpl" timestamp="1602577685371">
+    <state x="910" y="390" key="#File_Watchers" timestamp="1602652688303">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="593" y="317" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1602577685371" />
+    <state x="910" y="390" key="#File_Watchers/0.0.2048.1112@0.0.2048.1112" timestamp="1602652688303" />
+    <state x="391" y="375" key="EditFileWatcherDialog" timestamp="1602582196260">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="391" y="375" key="EditFileWatcherDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602582196260" />
+    <state x="288" y="411" key="FileChooserDialogImpl" timestamp="1602638092707">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="288" y="411" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1602638092707" />
     <state x="392" y="282" key="run.anything.popup" timestamp="1602577723262">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="392" y="282" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602577723262" />
-    <state x="475" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1602577728813">
+    <state x="475" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1602651985559">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="475" y="337" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602577728813" />
+    <state x="475" y="337" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602651985559" />
   </component>
 </project>
