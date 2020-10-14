@@ -25,9 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bc72134-8d00-4631-921a-e8bf5b41fcce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/_user_info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,13 +174,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\baoshi\code\weibo3\resources\views\static_pages" />
-      <recent name="C:\Users\baoshi\code\weibo3\app\Modles" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\baoshi\code\weibo3\resources\views\users" />
       <recent name="C:\Users\baoshi\code\weibo3\resources\views\static_pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\baoshi\code\weibo3\app\Models" />
+      <recent name="C:\Users\baoshi\code\weibo3\resources\views\static_pages" />
+      <recent name="C:\Users\baoshi\code\weibo3\app\Modles" />
     </key>
   </component>
   <component name="RunManager">
@@ -230,13 +235,21 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="288" y="411" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1602638092707" />
+    <state x="754" y="250" key="RollbackChangesDialog" timestamp="1602658392571">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="754" y="250" key="RollbackChangesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1602658392571" />
+    <state x="423" y="315" width="865" height="536" key="find.popup" timestamp="1602658548273">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="423" y="315" width="865" height="536" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602658548273" />
     <state x="392" y="282" key="run.anything.popup" timestamp="1602577723262">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="392" y="282" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602577723262" />
-    <state x="474" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1602653862768">
+    <state x="474" y="337" width="672" height="678" key="search.everywhere.popup" timestamp="1602659287636">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="474" y="337" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602653862768" />
+    <state x="474" y="337" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1602659287636" />
   </component>
 </project>
