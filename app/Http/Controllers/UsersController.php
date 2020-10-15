@@ -39,7 +39,13 @@ class UsersController extends Controller
             'password' => bcrypt($request->password),
         ]);
         session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
-
+        //注册成功后，跳转到用户个人中心
+        //return redirect()->route('users.show', $user->id);
         return redirect()->route('users.show', $user);
+    }
+
+    public function edit(User $user)
+    {
+        return view('user.edit', compact('user'));
     }
 }
