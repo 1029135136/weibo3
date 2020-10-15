@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -23,3 +24,10 @@ Route::resource('users', 'UsersController');
 //注册页面
 Route::get('/signup', 'UsersController@create')
     ->name('signup');
+//会话
+Route::get('login', 'SessionsController@create')
+    ->name('login');
+Route::post('login', 'SessionsController@store')
+    ->name('login');
+Route::delete('logout', 'SessionsController@destroy')
+    ->name('logout');
