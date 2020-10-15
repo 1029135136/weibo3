@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use League\CommonMark\Block\Element\AbstractBlock;
@@ -28,5 +29,12 @@ class SessionsController extends Controller
             session()->flash('danger','邮箱或密码不正确');
             return redirect()->back()->withInput();
         }
+    }
+
+    public function destroy()
+    {
+        Auth::logout();
+        session()->flash('success','退出登录状态成功');
+        return view('sessions.create');
     }
 }
