@@ -17,8 +17,9 @@ class UsersController extends Controller
      */
     public function __construct()
     {
+        //所有用户都可以使用的功能
         $this->middleware('auth', [
-            'except'=>['show','create','store']
+            'except'=>['show','create','store','index']
         ]);
         $this->middleware('guest', [
             'only'=>['create','store']
@@ -85,5 +86,14 @@ class UsersController extends Controller
         $user->newQuery()->update($data);
         session()->flash('success','用户资料更新成功');
         return redirect()->route('users.show', $user->fillable(['id']));
+    }
+
+    /**
+     * 全量用户信息查询
+     */
+    public function index()
+    {
+        $users = User::all();
+        return view('users.index', compact('users'));
     }
 }
