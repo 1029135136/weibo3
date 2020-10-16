@@ -49,6 +49,23 @@ class UsersController extends Controller
 
     public function edit(User $user)
     {
-        return view('user.edit', compact('user'));
+        return view('users.edit', compact('user'));
+    }
+
+    public function update(User $user,Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|max:50',
+            'password' => 'nullable|confirmed|min:6'
+        ]);
+        $data = [];
+        $data['name'] = $request->input('name');
+        //如果请求中包含密码则更新密码
+        if ($request->input('password')) {
+            $data['password'] = bcrypt($request->input('password'));
+        }
+        $user->newQuery()->update($data);
+        session()->flash('success','用户资料更新成功');
+        return redirect()->route('users.show', $user->fillable(['id']));
     }
 }
