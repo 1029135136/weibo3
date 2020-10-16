@@ -10,6 +10,21 @@ class UsersController extends Controller
 {
     //
 
+
+    /**
+     * 权限控制模块
+     * UsersController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', [
+            'except'=>['show','create','store']
+        ]);
+        $this->middleware('guest', [
+            'only'=>['create','store']
+        ]);
+    }
+
     public function create()
     {
         return view('users.create');
@@ -54,6 +69,9 @@ class UsersController extends Controller
 
     public function update(User $user,Request $request)
     {
+        //权限校验
+        $this->authorize('update', $user);
+
         $this->validate($request, [
             'name' => 'required|max:50',
             'password' => 'nullable|confirmed|min:6'
